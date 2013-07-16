@@ -638,7 +638,8 @@ struct Viewer3DFactory : public Display3DFactory
   static void
   drawImage2D( Viewer3D<Space,KSpace> & viewer, const TImageType2D & anImage, const TFunctor & aFunctor,
    //            typename Viewer3D<Space,KSpace>::TextureMode aTextureMode= Viewer3D<Space,KSpace>::GrayScaleMode );
-               typename Viewer3D<Space,KSpace>::TextureMode aTextureMode= 1 );
+    //           typename Viewer3D<Space,KSpace>::TextureMode aTextureMode= 1 );
+               typename Viewer3D<Space,KSpace>::TextureMode aTextureMode= Viewer3D<Space,KSpace>::RGBMode );
 
   /**
    * @brief drawImage3D
@@ -651,7 +652,8 @@ struct Viewer3DFactory : public Display3DFactory
   static void
   drawImage3D( Viewer3D<Space,KSpace> & viewer, const TImageType3D & anImage3D, const TFunctor & aFunctor,
      //          typename Viewer3D<Space,KSpace>::TextureMode aTextureMode=Viewer3D<Space,KSpace>::GrayScaleMode );
-                typename Viewer3D<Space,KSpace>::TextureMode aTextureMode= 1 );
+      //          typename Viewer3D<Space,KSpace>::TextureMode aTextureMode= 1 );
+               typename Viewer3D<Space,KSpace>::TextureMode aTextureMode= Viewer3D<Space,KSpace>::RGBMode );
 
 
   /**
